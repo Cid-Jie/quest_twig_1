@@ -1,23 +1,19 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bonjour</title>
-    <link rel="icon" href="/assets/images/favicon.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
+{#home.html.twig #}
+{% extends 'layout.html.twig' %}
 
-<body>
-    <h1>Hello {{ name }} ! You are {{age}} years old!<br>
-        {% if age > 15 %}
-        You are over the age of 15!<br><br>
-        {% endif %}
+{% block title %}
+    {{ parent() }} - Home
+{% endblock %}
 
-        {% for user in users %}
-            {{ user.name }} is {{ user.age }} years old.<br><br>
-        {% endfor %}
-    </h1>
+{% block content %}
 
-</body>
-</html>
+    <h1>Hello World !</h1>
+
+    {% if age > 15 %}
+    You are over the age of 15!<br><br>
+    {% endif %}
+
+    {% for user in users %}
+        {{ user.name }} is {{ user.age }} years old.<br><br>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{#hello.html.twig #}
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Contact - us !
+{% endblock %}
+
+{% block content %}
+
+    <h1>Please, use this form for contact us :</h1>
+    {% include 'component/_form.html.twig' %}
+
+{% endblock %}
