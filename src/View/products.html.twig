@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bonjour</title>
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <h1> In my array we can find : <br>
+
+            <ul>{% for product in products %}
+                {% if loop.index0 == 3 %}
+                <p></p>
+                {% endif %}
+                Instrument : {{ product}}
+            {% endfor %}</ul>
+
+
+        {{ dump(products) }}
+    </h1>   
+
+</body>
+</html>
