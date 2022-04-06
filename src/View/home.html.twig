@@ -7,7 +7,7 @@
 
 {% block content %}
 
-    <h1>Hello World !</h1>
+    <h1>Hello {{ name }}</h1>
 
     {% if age > 15 %}
     You are over the age of 15!<br><br>
@@ -16,4 +16,5 @@
     {% for user in users %}
         {{ user.name }} is {{ user.age }} years old.<br><br>
     {% endfor %}
+    
 {% endblock %}

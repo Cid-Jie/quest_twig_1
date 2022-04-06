@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'component/_bootstrap.css.twig' %}
 
     <title>{% block title %}Project twig{% endblock %}</title>
 
@@ -17,6 +18,8 @@
     {% include 'component/_navbar.html.twig' %}
 
     {% block content %} {% endblock %}
+
+    {% include 'component/_footer.html.twig' %}
 
 </body>
 </html>
